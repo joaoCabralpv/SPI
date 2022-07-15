@@ -1,6 +1,7 @@
-# SPI
-SPI (Suite de Programas Inúteis)  é um conjunto de programas inúteis numa suite. 
+# SPS
+SPS (Suite de Programas Simpeles) é, como o nome indica, um conjunto de programas simples. 
 
-  Features:
+ 
+ ## Features planeadas:
   
   calculadora, cat, texto aleatório
