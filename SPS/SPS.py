@@ -1,6 +1,3 @@
-from cgi import print_arguments
-
-
 listaprogramas = ["calculadora", "cat", "texto aleatório", "sair"]
 primeira_vez = True
 
