@@ -1,3 +1,6 @@
+from random import randint
+
+
 listaProgramas = ["calculadora", "cat", "texto aleatório", "sair"]
 primeira_vez = True
 
@@ -62,13 +65,17 @@ def calculadora() :
 
 
 def cat() :
-    print("cat")
+    print(input("cat: "))
+    inicio()
+
+
 def texto_aleatorio() :
-    print("texto aleatorio")
+    print("texto aleatório")
 
 def inicio():
         # iniacialização
         primeira_vez = False
+        print("\n")
         igual = "=" * 19
         print(igual)
         print("escolha a aplicação")
