@@ -58,7 +58,7 @@ def calculadora() :
 
     # volta para o início do programa
 
-    inicio()
+    return inicio()
 
 
     
@@ -66,15 +66,20 @@ def calculadora() :
 
 def cat() :
     print(input("cat: "))
-    inicio()
+    return inicio()
 
 
 def texto_aleatorio() :
-    print("texto aleatório")
+    for i in range(int(input("Quantos caracteres queres que o texto tenha?: "))):
+        try:
+            print(chr(randint(0,0x10FFFD)),end="\0")
+        except:
+            0
+    print()
+    return inicio()
 
 def inicio():
         # iniacialização
-        primeira_vez = False
         print("\n")
         igual = "=" * 19
         print(igual)
@@ -98,10 +103,10 @@ def inicio():
                 elif escolha == "3" :
                     texto_aleatorio()
                 elif escolha == "4":
-                    sair = True
                     return
             else :
                 print("\033[;31;m erro: operação inválida\033[;;;m")
 
 if primeira_vez:
+    primeira_vez = False
     inicio()
