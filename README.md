@@ -2,14 +2,31 @@
 SPS (Suite de Programas Simpeles) é, como o nome indica, um conjunto de programas simples. 
 
  
- ## Features planeadas:
+ ## Aplicações planeadas:
   
-  calculadora, cat, texto aleatório, mais coisas na calculadora
+  calculadora
+  
+  cat 
+  
+  texto aleatório
+  
+## Fertures planeadas
+mais funções na calculadora
+
+escrever resultado para um arquivo
+
+transformar aplicações em módulos
+
+argumento de linha de comando
+
+interface gráfica (talvez)
 
 ## Features em desenvolvimento:
 
-    texto aleatório
+texto aleatório
 
-## Features acabadas
-calculadora, cat
+## Features em estado usável acabadas
+calculadora 
+
+cat
 
