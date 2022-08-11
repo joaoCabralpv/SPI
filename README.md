@@ -23,10 +23,16 @@ interface gráfica (talvez)
 
 ## Features em desenvolvimento:
 
-texto aleatório
+escrever resultado para um arquivo
 
-## Features em estado usável acabadas
+## Aplicaões em em estado usável 
 calculadora 
 
 cat
+
+texto aleatório
+
+## Features acabadas 
+
+mais funções na calculadora
 
