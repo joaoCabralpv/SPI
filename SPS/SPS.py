@@ -1,3 +1,4 @@
+from math import factorial
 from random import randint
 
 
@@ -5,7 +6,7 @@ listaProgramas = ["calculadora", "cat", "texto aleatório", "sair"]
 primeira_vez = True
 
 def calculadora() :
-    listaOperacoes = ["soma","subtetração", "mutiplicação", "divisão", "porcentagem", "módulo", "expoente", "raiz quadrada"]
+    listaOperacoes = ["soma","subtetração", "mutiplicação", "divisão", "porcentagem", "módulo", "expoente", "raiz quadrada", "raiz cúbica", "média", "maior", "menor", "factorial"]
     igual = "="*18
     print(igual)
     print("escolha a operação")
@@ -14,7 +15,10 @@ def calculadora() :
     # escreve as operações para o console
 
     for i in range(len(listaOperacoes)):
-        iponto = str(i+1) + ". "
+        if i < 9:
+            iponto = str(i+1) + ". "
+        else:
+            iponto = str(i+1) + "."
         print(iponto, listaOperacoes[i])
     op = 0;  
 
@@ -32,7 +36,7 @@ def calculadora() :
     # input dos números 
 
     n1 = int(input("Qual é o primeiro número: "))
-    if listaOperacoes[iop] != "raiz quadrada":
+    if listaOperacoes[iop] != "raiz quadrada" and listaOperacoes[iop] != "raiz cúbica" and listaOperacoes[iop] != "factorial":
         n2 = int(input("Qual é o segundo número: "))
 
     # executa a operação e escreve o resultado para o console
@@ -53,6 +57,16 @@ def calculadora() :
         print("{} elevado a {} é {}".format(n1,n2,n1**n2))
     elif iop == 7:
         print("A raiz quadrada de {} é {}".format(n1,n1**0.5))
+    elif iop == 8:
+        print("A raiz cúbica de {} é {}".format(n1,n1**(1/3)))
+    elif iop == 9:
+        print("A média entre {} e {} é {}".format(n1,n2,((n1+n2)/2)))
+    elif iop == 10:
+        print("Entre {} e {}, o maior é {}".format(n1,n2,(max(n1,n2))))
+    elif iop == 11:
+        print("Entre {} e {}, o menor é ".format(n1,n2,min(n1,n2)))
+    elif iop == 12:
+        print("{} factorial é {}".format(n1,factorial(n1)))
     else:
         print("Isso não devia acontecer")
 
@@ -72,7 +86,7 @@ def cat() :
 def texto_aleatorio() :
     for i in range(int(input("Quantos caracteres queres que o texto tenha?: "))):
         try:
-            print(chr(randint(0,0x10FFFD)),end="\0")
+            print(chr(randint(0,0x10FFFD)),end="")
         except:
             0
     print()
