@@ -15,7 +15,7 @@ mais funções na calculadora
 
 escrever resultado para um arquivo
 
-transformar aplicações em módulos
+transformar aplicações em módulos separados
 
 argumento de linha de comando
 
@@ -25,7 +25,8 @@ interface gráfica (talvez)
 
 ## Features em desenvolvimento:
 
-escrever resultado para um arquivo
+transformar aplicações em módulos separados
+
 
 ## Aplicaões em em estado usável 
 calculadora 
@@ -37,4 +38,7 @@ texto aleatório
 ## Features acabadas 
 
 mais funções na calculadora
+
+escrever resultado para um arquivo
+
 
