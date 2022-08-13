@@ -10,7 +10,7 @@ def sair() :
     return
 
 def guardarArquivo(texto) :
-    arquivo = open(input("Qual é o nome do arquivo? Se tiver um arquivo com o mesmo nome, o arquivo será apagado: "), "w")
+    arquivo = open(input("Qual é o nome do arquivo? Se tiver um arquivo com o mesmo nome, o arquivo será apagado: "), "w", encoding="utf-8")
     arquivo.write(str(texto))
 
 def calculadora() :
@@ -47,7 +47,7 @@ def calculadora() :
     if listaOperacoes[iop] != "raiz quadrada" and listaOperacoes[iop] != "raiz cúbica" and listaOperacoes[iop] != "factorial":
         n2 = int(input("Qual é o segundo número: "))
 
-    guardar = input("Queres grardar o resultado para um arquivo? [Y/N] : ").strip().upper()
+    guardar = input("Queres grardar o resultado para um arquivo? [S/N] : ").strip().upper()
     print()
 
     # executa a operação e escreve o resultado para o console
@@ -81,7 +81,7 @@ def calculadora() :
         texto = "A raiz quadrada de {} é {}".format(n1,resultado)
     elif iop == 8:
         resultado = n1**(1/3)
-        texto = "A raiz cúbica de {} é {}".format(n1,)
+        texto = "A raiz cúbica de {} é {}".format(n1,resultado)
     elif iop == 9:
         resultado = (n1+n2)/2
         texto = "A média entre {} e {} é {}".format(n1,n2,resultado)
@@ -90,7 +90,7 @@ def calculadora() :
         texto = "Entre {} e {}, o maior é {}".format(n1,n2,resultado)
     elif iop == 11:
         resultado = min(n1,n2)
-        texto = "Entre {} e {}, o menor é ".format(n1,n2,)
+        texto = "Entre {} e {}, o menor é ".format(n1,n2,resultado)
     elif iop == 12:
         resultado = factorial(n1)
         texto = "{} factorial é {}".format(n1,resultado)
@@ -101,7 +101,7 @@ def calculadora() :
 
     print(texto)
     print("\n")
-    if guardar == "Y":
+    if guardar == "S":
         guardarArquivo(resultado)
    
     # volta para o início do programa
@@ -113,17 +113,25 @@ def calculadora() :
 
 
 def cat() :
-    print(input("cat: "))
+    guardar = input("Queres guardar o texto para um arquivo?: [S/N]").strip().upper()
+    cat = input("cat: ")
+    print(cat)
+    if guardar == "S" :
+        guardarArquivo(cat)
     return inicio()
 
 
 def texto_aleatorio() :
+    string = ""
     for i in range(int(input("Quantos caracteres queres que o texto tenha?: "))):
         try:
-            print(chr(randint(0,0x10FFFD)),end="")
-        except:
-            0
-    print()
+            string += chr(randint(0,0x10FFFD))
+        except :
+            1
+    guardar = input("Queres guardar o texto para um arquivo?: [S/N]").strip().upper()
+    print(string)
+    if guardar == "S":
+        guardarArquivo(string)
     return inicio()
 
 def inicio(): 
