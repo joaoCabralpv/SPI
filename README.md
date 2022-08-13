@@ -19,6 +19,8 @@ transformar aplicações em módulos
 
 argumento de linha de comando
 
+opções para o texto aleatório
+
 interface gráfica (talvez)
 
 ## Features em desenvolvimento:
