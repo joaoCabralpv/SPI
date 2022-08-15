@@ -15,18 +15,19 @@ mais funções na calculadora
 
 escrever resultado para um arquivo
 
-transformar aplicações em módulos separados
+opções para o texto aleatório
 
-argumento de linha de comando
+transformar aplicações em módulos separados (projeto difrente)
+
+argumento de linha de comando (projeto difrente)
 
 opções para o texto aleatório
 
-interface gráfica (talvez)
+interface gráfica (talvez) (projeto difrente)
 
 ## Features em desenvolvimento:
 
-transformar aplicações em módulos separados
-
+opções para o texto aleatório
 
 ## Aplicaões em em estado usável 
 calculadora 
