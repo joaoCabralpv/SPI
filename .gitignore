@@ -1,3 +1,4 @@
 teste.py
 *.txt
 1
+__pycache__
