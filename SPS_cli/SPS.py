@@ -67,7 +67,7 @@ def calculadora() :
         resultado = n1/n2
         texto = "O quociente entre {} e {} é {}".format(n1,n2,resultado)
     elif iop == 4:
-        resultado = n1*(100/n2)
+        resultado = n1 * (n2/100)
         texto = "{} porcento de {} é {}".format(n1,n2,resultado)
     elif iop == 5:
          resultado = n1%n2

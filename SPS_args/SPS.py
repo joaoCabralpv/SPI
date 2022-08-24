@@ -1,46 +1,20 @@
-from guardarArquivo import guardarArquivo
+import sys
 from calculadora import calculadora
 from cat import cat
 from textoAleatorio import textoAleatorio
-
-
-listaProgramas = ["calculadora", "cat", "texto aleatório", "sair"]
-primeira_vez = True
-
-
-def inicio(): 
-            # iniacialização
-            print("\n")
-            igual = "=" * 19
-            print(igual)
-            print("escolha a aplicação")
-            print(igual,"")
-
-            # escreve os programas para o console
-            for i in range(len(listaProgramas)):
-                iponto = str(i+1) + ". "
-                print(iponto,  listaProgramas[i])
-
-            # escolhe o programa na suite
-
-            escolha = input("Qual é a aplicação que queres usar: ")
-            if escolha.isnumeric() and int(escolha) <= len(listaProgramas)+1:
-                if escolha == "1" :
-                    calculadora()
-                elif escolha == "2" :
-                    cat()
-                elif escolha == "3" :
-                    textoAleatorio()
-                elif escolha != "4" :
-                    input("\033[;31;merro: operação inválida\033[;;;m")
-                    print("\n")
-                    inicio()
-            else :
-                input("\033[;31;merro: operação inválida\033[;;;m")
-                print("\n")
-                inicio()
-
-if primeira_vez:
-    primeira_vez = False
-    a = inicio()
-
+salvar = False
+nomeArquivo = 0
+try : 
+    if sys.argv[len(sys.argv)-2] == "s" or "salvar":
+        save = True
+        nomeArquivo = sys.argv[len(sys.argv)-1]
+    if sys.argv[1] == "c" or sys.argv[1] == "calculadora":
+        calculadora(sys.argv[2],sys.argv[3],sys.argv[4],salvar,nomeArquivo)
+    elif sys.argv[1] == "a" or sys.argv[1] == "cat":
+        cat()
+    elif sys.argv[1] == "t" or sys.argv[1] == "textoAleatorio":
+        textoAleatorio()
+    else:
+        print("Arurmento inválido") 
+except:
+    print("Nenhum argumento foi dado")

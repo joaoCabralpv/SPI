@@ -11,5 +11,3 @@ def textoAleatorio() :
     guardar = input("Queres guardar o texto para um arquivo?: [S/N]").strip().upper()
     if guardar == "S":
         guardarArquivo(string)
-
-textoAleatorio()
