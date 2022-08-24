@@ -64,7 +64,7 @@ def calculadora(n1,op,n2,salvar,nomeArquivo) :
     elif op == "modulo":
          resultado = n1%n2
          texto ="{} módulo de {} é {}".format(n1,n2,resultado)
-    elif op == "elevado a":
+    elif op == "elevado":
         resultado = n1**n2
         texto = "{} elevado a {} é {}".format(n1,n2,resultado)
     elif op == "raiz quadrada":

@@ -71,7 +71,7 @@ def calculadora() :
         texto = "{} porcento de {} é {}".format(n1,n2,resultado)
     elif iop == 5:
          resultado = n1%n2
-         texto ="{} módulo de {} é {}".format(n1,n2,resultado)
+         texto ="{} modulo de {} é {}".format(n1,n2,resultado)
     elif iop == 6:
         resultado = n1**n2
         texto = "{} elevado a {} é {}".format(n1,n2,resultado)
