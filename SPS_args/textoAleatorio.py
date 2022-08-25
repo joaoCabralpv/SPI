@@ -2,12 +2,11 @@ from guardarArquivo import guardarArquivo
 from random import randint
 
 
-def textoAleatorio() :
+def textoAleatorio(numChar,salvar,nomeArquivo) :
     string = ""
-    for i in range(int(input("Quantos caracteres queres que o texto tenha?: "))):
+    for i in range(int(numChar)):
         string += chr(randint(0,0xD7FA))
     print("\n")
     print(string)
-    guardar = input("Queres guardar o texto para um arquivo?: [S/N]").strip().upper()
-    if guardar == "S":
-        guardarArquivo(string)
+    if salvar:
+        guardarArquivo(string, nomeArquivo)

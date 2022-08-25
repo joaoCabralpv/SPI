@@ -5,40 +5,6 @@ from math import factorial
 def calculadora(n1,op,n2,salvar,nomeArquivo) :
     n1 = float(n1)
     n2 = float(n2)
-    #listaOperacoes = ["soma","subtetração", "mutiplicação", "divisão", "porcentagem", "módulo", "expoente", "raiz quadrada", "raiz cúbica", "média", "maior", "menor", "factorial"]
-    #igual = "="*18
-    #print(igual)
-    #print("escolha a operação")
-    #print(igual)
-  
-    # escreve as operações para o console
-
-    #for i in range(len(listaOperacoes)):
-     #   if i < 9:
-      #      iponto = str(i+1) + ". "
-       # else:
-        #    iponto = str(i+1) + "."
-        #print(iponto, listaOperacoes[i])
-    #op = 0;  
-
-    # escolhe a operação na calculadora
-
-    #while True:
-     #   op = input("Qual é a operação? ")
-        
-      #  if op.isnumeric() :
-       #     iop = int(op)-1
-        #    if op.isnumeric() and int(op) <= len(listaOperacoes)+1:
-         #       break
-        #print("\u001b[31m erro: operação inválida\u001b[0m")
-
-    # input dos números 
-
-    #n1 = int(input("Qual é o primeiro número: "))
-    #if listaOperacoes[iop] != "raiz quadrada" and listaOperacoes[iop] != "raiz cúbica" and listaOperacoes[iop] != "factorial":
-     #   n2 = int(input("Qual é o segundo número: "))
-
-    #guardar = input("Queres grardar o resultado para um arquivo? [S/N] : ").strip().upper()
     print()
 
     # executa a operação e escreve o resultado para o console
