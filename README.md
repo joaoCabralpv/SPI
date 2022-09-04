@@ -14,7 +14,11 @@ SPS_args usa argumetos de linha de comando em vez de uma interface de usuário, 
 A aplicação de calculadora serve para calcular um valor.
 
 #### Calculadora (SPS_cli)
-Para usar a calculadora na versão SPS_cli, primeiro escolhe a opeção 1 quando entras o programa, depois uma lista com todas as operações desponveis apareçe.
+Para usar a calculadora na versão SPS_cli, primeiro escolhe a opeção 1 quando entras o programa
+
+![Capturar](https://user-images.githubusercontent.com/97802328/188325139-ee844d90-67e4-4d0d-8cc1-a18cd6ca51d7.PNG)
+
+Depois, uma lista com todas as operações desponveis apareçe.
 
 ![Capturar](https://user-images.githubusercontent.com/97802328/188321165-05f1aa9f-fc0c-46e8-a6b3-000d4c723025.PNG)
 
