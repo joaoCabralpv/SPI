@@ -21,7 +21,7 @@ def calculadora(n1,op,n2,salvar,nomeArquivo) :
     elif op == "vezes":
         resultado = n1*n2
         texto = "O produto entre {} e {} é {}".format(n1,n2, resultado)
-    elif op == "a dividir por":
+    elif op == "dividir":
         resultado = n1/n2
         texto = "O quociente entre {} e {} é {}".format(n1,n2,resultado)
     elif op == "porcento":
