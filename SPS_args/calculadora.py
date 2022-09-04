@@ -1,4 +1,3 @@
-from mailbox import NotEmptyError
 from guardarArquivo import guardarArquivo
 from math import factorial
 
