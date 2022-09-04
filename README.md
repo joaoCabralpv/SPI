@@ -33,4 +33,17 @@ Se escolheres guradar o resultado num arquivo, o resultado vai agora aparcer no 
 Nota(Se o arquivo já existir, os conteudos do arquivo vão ser apagados e subistituidos com o resultado, isso também se aplica aos outros programas e ao SPS_args)
 
 #### Calculadora (SPS_args)
+Para usar a calculadora no SPS_args dá o argumento "-c" ou --calculadora.
+
+Depois o primeiro número
+De seguida a operação que são (mais, menos, vezes, dividir ,porcento ,modulo, elevado, raziz_quadrada, raiz_cubica, media, mairo, menor e factorial)
+depois o ultimo valor (Para as poerações "raiz_quadrada, raiz_cubica e factorial", não preciso por o segundo valor).
+
+Podes usar o argumento s ou salvar para guardar o resultado para um arquivo pondo o node do arquivo seguido do "s" ou "salvar" 
+(Isso funciona para todos o programas do SPS_args).
+
+### Cat
+Cat o programa mais simples desta suite, ele simplesmento retorna o seu input.
+
+#### Cat (SPS_cli)
 
