@@ -33,10 +33,10 @@ def calculadora(n1,op,n2,salvar,nomeArquivo) :
     elif op == "elevado":
         resultado = n1**n2
         texto = "{} elevado a {} é {}".format(n1,n2,resultado)
-    elif op == "raiz quadrada":
+    elif op == "raiz_quadrada":
         resultado = n1**0.5
         texto = "A raiz quadrada de {} é {}".format(n1,resultado)
-    elif op == "raiz cubica":
+    elif op == "raiz_cubica":
         resultado = n1**(1/3)
         texto = "A raiz cúbica de {} é {}".format(n1,resultado)
     elif op == "media":
