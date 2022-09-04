@@ -47,3 +47,25 @@ Cat o programa mais simples desta suite, ele simplesmento retorna o seu input.
 
 #### Cat (SPS_cli)
 
+Para usar a calculadora na versão SPS_cli, primeiro escolhe a opeção 1 quando entras o programa.
+
+![Capturar](https://user-images.githubusercontent.com/97802328/188323507-cee16969-b32b-42a4-af43-eea9867d4993.PNG)
+
+Depois um promp para guardar o arquivo aparece
+
+![Capturar](https://user-images.githubusercontent.com/97802328/188323549-d202cc95-60ef-4d89-a0f5-8026b0fb5b41.PNG)
+
+Depois um promp que diz "cat: " aparece e digita ai o teu input
+
+![Capturar](https://user-images.githubusercontent.com/97802328/188323632-9d79ff73-cab3-42e8-91e2-a71def77645a.PNG)
+
+Depois, teu input aparece no terminal
+
+![Capturar](https://user-images.githubusercontent.com/97802328/188323670-84e10668-15e6-4bb5-b33e-7838da50d3ba.PNG)
+
+Se escolheste para guardar o ficheiro para um arquivo, um prompt para escolheres o nome do arquivo aparacerá
+
+
+![Capturar](https://user-images.githubusercontent.com/97802328/188323769-4913a995-c1b8-47eb-a7d5-54d239ba3948.PNG)
+
+#### Cat (SPS_args)
