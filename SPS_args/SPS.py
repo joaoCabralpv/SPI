@@ -4,14 +4,15 @@ from cat import cat
 from textoAleatorio import textoAleatorio
 salvar = False
 nomeArquivo = 0
-#try : 
-if True:
+try : 
+    # Salva o arquivo se o argumento -s for encontrado
     salvar = sys.argv[len(sys.argv)-2] == "s" or sys.argv[len(sys.argv)-2] == "salvar"
-    print(salvar)
 
-
+    # verifica o nome do arquivo para guardar o resultado
     if salvar:
         nomeArquivo = sys.argv[len(sys.argv)-1]
+
+    # escolhe o programa para ser executado
 
     if sys.argv[1] == "c" or sys.argv[1] == "calculadora":
         calculadora(sys.argv[2],sys.argv[3],sys.argv[4],salvar,nomeArquivo)
@@ -21,5 +22,5 @@ if True:
         textoAleatorio(int(sys.argv[2]),salvar,nomeArquivo)
     else:
         print("Arurmento inválido") 
-#except:
- #   print("Nenhum argumento foi dado")
+except:
+    print("Nenhum argumento foi dado")
