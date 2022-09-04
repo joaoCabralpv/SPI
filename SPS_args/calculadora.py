@@ -49,8 +49,8 @@ def calculadora(n1,op,n2,salvar,nomeArquivo) :
         resultado = min(n1,n2)
         texto = "Entre {} e {}, o menor é ".format(n1,n2,resultado)
     elif op == "factorial":
-        resultado = factorial(n1)
-        texto = "{} factorial é {}".format(n1,resultado)
+        resultado = factorial(int(n1))
+        texto = "{} factorial é {}".format(int(n1),resultado)
     else:
         print("Isso não devia acontecer")
 
